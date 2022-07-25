@@ -1,0 +1,44 @@
+
+    <h1 class="introduction">Hi, I'm William</h1>
+    <div class="row row-container">
+    <a class="col-md-4 leftA" href="aboutMe.html">
+        <div class="leftContainer">
+            <div class="colorBlock" id="block1">
+                
+            </div>
+            <div class="caption">
+                <h1 class="Title">About Me</h1>
+            </div>
+            <div class="colorCode">
+                <h3>#B6C7E6</h3>
+            </div>
+        </div>
+    </a>
+    
+    <a class="col-md-4 middleA" href="projects.html">
+        <div class="middleContainer">
+            <div class="colorBlock" id="block2">
+            </div>
+            <div class="caption">
+                <h1 class="Title">Project Archive</h1>
+            </div>
+            <div class="colorCode">
+                <h3>#3F72AF</h3>
+            </div>
+        </div>
+    </a>
+
+    <a class="col-md-4 rightA" href="inspiration.html">
+        <div class="rightContainer">
+            <div class="colorBlock" id="block3">
+                
+            </div>
+            <div class="caption">
+                <h1 class="Title">Inspiration</h1>
+            </div>
+            <div class="colorCode">
+                <h3>#112D4E</h3>
+            </div>
+        </div>
+    </a>
+    </div>

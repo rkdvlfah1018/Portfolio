@@ -1,0 +1,11 @@
+canvas{
+    background-color: #0098FF;
+}
+
+body{
+    margin: 0;
+}
+
+.droplet-img{
+    display: none;
+}

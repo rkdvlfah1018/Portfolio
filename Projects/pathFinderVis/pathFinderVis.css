@@ -1,0 +1,30 @@
+.nav-item .whiteText, .whiteText, .whiteText:hover, .nav-item .whiteText:hover{
+    color:white;
+}
+
+.description{
+    text-align: center;
+    background-color: rgb(0, 213, 255);
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.icon{
+    margin-left: 5px;
+}
+
+.wallNode{
+    background-color: black;
+}
+
+.discovered{
+    background-color: red;
+}
+
+.explored{
+    background-color: blue;
+}
+
+.path{
+    background-color: greenyellow;
+}
