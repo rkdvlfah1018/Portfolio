@@ -24,6 +24,11 @@ html{
     left: 25px;
     color: white;
     font-size: 25px;
+    opacity: 0.33;
+}
+
+.toProjects:hover{
+    opacity: 1;
 }
 
 .prev{
@@ -33,6 +38,7 @@ html{
     position: absolute;
     top: 45%;
     left: 5%;
+    opacity: 0.33;
 }
 
 .next{
@@ -42,4 +48,13 @@ html{
     position: absolute;
     top: 45%;
     right: 5%;
+    opacity: 0.33;
+}
+
+.prev:hover{
+    opacity: 1;
+}
+
+.next:hover{
+    opacity: 1;
 }
