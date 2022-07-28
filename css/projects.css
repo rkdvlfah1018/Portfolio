@@ -1,3 +1,12 @@
 body{
     background-color: #3F72AF;
 }
+
+.toProjects{
+    z-index: 10;
+    position:relative;
+    top: 25px;
+    left: 25px;
+    color: white;
+    font-size: 25px;
+}
