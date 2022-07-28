@@ -18,7 +18,11 @@ export class Ripple{
         this.x = x;
         this.y = y;
         this.radius = 0;
-        this.maxRadius = this.getMax(x,y);
+        if (x === -99){
+            this.maxRadius = 0;
+        }else{
+            this.maxRadius = this.getMax(x,y);
+        }
     }
 
     animate(ctx){

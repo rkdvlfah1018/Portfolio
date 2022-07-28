@@ -2,6 +2,11 @@ import {Ripple} from "./ripple.js";
 import {Dot} from "./dot.js";
 import {collide} from "./utils.js";
 
+let images = ["./images/starryNight.jpg","./images/goghPortrait.jpg", "./images/pearlEarring.jpg", "./images/scream.jpg", 
+"./images/impressionSunrise.jpg"];
+
+var imageIndex = 0;
+
 class App{
     constructor(){
         this.canvas = document.createElement("canvas");
@@ -30,8 +35,13 @@ class App{
             height: 0
         };
 
+        let currImage = images[imageIndex];
+
+        document.querySelector(".prev").addEventListener("click", this.prevImage.bind(this));
+        document.querySelector(".next").addEventListener("click", this.nextImage.bind(this));
+        
         this.image = new Image();
-        this.image.src = 'starryNight.jpg';
+        this.image.src = currImage;
         this.image.onload = () => {
             this.isLoaded = true;
             this.drawImage();
@@ -121,6 +131,50 @@ class App{
         this.ctx.drawImage(this.image, 0, 0, this.image.width, this.image.height, this.imgPos.x, this.imgPos.y, this.imgPos.width, this.imgPos.height);
         this.ripple.start(e.offsetX, e.offsetY);
     }
+
+    prevImage(){
+        if (imageIndex === 0){
+            this.ctx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            this.tmpCtx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            imageIndex = images.length-1;
+            let currImage = images[imageIndex];
+            this.image.src = currImage;
+            this.tmpCtx.drawImage(this.image, 0, 0, this.image.width, this.image.height, this.imgPos.x, this.imgPos.y, this.imgPos.width, this.imgPos.height);
+            this.ripple.start(-99, 0);
+        }else{
+            this.ctx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            this.tmpCtx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            imageIndex--;
+            let currImage = images[imageIndex];
+            this.image.src = currImage;
+            this.tmpCtx.drawImage(this.image, 0, 0, this.image.width, this.image.height, this.imgPos.x, this.imgPos.y, this.imgPos.width, this.imgPos.height);
+            this.ripple.start(-99, 0);
+        }
+    };
+    
+    nextImage(){
+        if (imageIndex === images.length-1){
+            this.ctx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            this.tmpCtx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            imageIndex = 0;
+            let currImage = images[imageIndex];
+            this.image.src = currImage;
+            this.tmpCtx.drawImage(this.image, 0, 0, this.image.width, this.image.height, this.imgPos.x, this.imgPos.y, this.imgPos.width, this.imgPos.height);
+            console.log(this.image);
+            console.log(this.image.width);
+            this.ripple.start(-99, 0);
+        }else{
+            this.ctx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            this.tmpCtx.clearRect(0, 0, document.body.clientWidth, document.body.clientHeight);
+            imageIndex++;
+            let currImage = images[imageIndex];
+            this.image.src = currImage;
+            this.tmpCtx.drawImage(this.image, 0, 0, this.image.width, this.image.height, this.imgPos.x, this.imgPos.y, this.imgPos.width, this.imgPos.height);
+            console.log(currImage);
+            console.log(this.image.width);
+            this.ripple.start(-99, 0);
+        }
+    };
 }
 
 window.onload = () => {
