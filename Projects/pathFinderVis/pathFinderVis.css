@@ -28,3 +28,10 @@
 .path{
     background-color: greenyellow;
 }
+
+.toProjects{
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
