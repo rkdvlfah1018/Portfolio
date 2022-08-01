@@ -1,3 +1,116 @@
 body{
     background-color: #b6c7e6;
+    position: relative;
+}
+
+.section1{
+    margin: 150px auto 100px auto;
+    width: 50%;
+    text-align: left;
+    position: relative;
+}
+
+.profileImage{
+    object-fit: cover;
+    width: 210px;
+    height: 210px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.linkedin{
+    color: #0A66C2;
+    font-size: 2rem;
+}
+
+.s1d{
+    display: flex;
+    height: 210px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    margin-bottom: 0;
+}
+
+.github{
+    color: black;
+    font-size: 2rem;
+}
+
+.sbs{
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.icons{
+    display: inline-block;
+}
+
+.email{
+    color: black;
+    font-size: 2rem;
+}
+
+.showEmail{
+    visibility: visible;
+}
+
+.emailAdd{
+    visibility: hidden;
+}
+
+hr{
+    border-style: none none dotted none;
+    width: 5%;
+    color: #F9F7F7;
+    border-width: 0.5rem;
+    margin-bottom: 70px;
+}
+
+.title{
+    text-align: center;
+}
+
+.Activities{
+    position: relative;
+    margin: 0 auto 100px auto;
+    width: 70%;
+}
+
+h4{
+    margin-bottom: 10px;
+}
+
+.skills{
+    position: relative;
+    margin: 0 auto 100px auto;
+    width: 100%;
+}
+
+table{
+    border-spacing: 1rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mastered{
+    color: #F9F7F7;
+}
+
+.unmastered{
+    color: grey;
+    font-size: 5px;
+}
+
+.toIndex{
+    z-index: 10;
+    position:absolute;
+    top: -125px;
+    left: 25px;
+    color: white;
+    font-size: 25px;
 }

@@ -6,7 +6,7 @@ body{
     overflow: hidden;
 }
 
-.toProjects{
+.toIndex{
     z-index: 10;
     position:absolute;
     top: 25px;
