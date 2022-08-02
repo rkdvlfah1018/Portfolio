@@ -1,3 +1,37 @@
 body{
     background-color: #112D4E;
+    color:  #F9F7F7;
+}
+
+.section{
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 1rem;
+    width: 80%;
+}
+
+img{
+    width: 20%;
+    margin-right: 15%;
+    display:inline-block;
+    float: left;
+}
+
+.l1{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.descriptionTitle{
+    display: inline-block;
+}
+
+.toIndex{
+    z-index: 10;
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    color: white;
+    font-size: 25px;
 }
