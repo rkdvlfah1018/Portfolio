@@ -1,0 +1,13 @@
+.toProjects{
+    z-index: 10;
+    position:absolute;
+    top: 25px;
+    left: 25px;
+    color: black;
+    font-size: 25px;
+    opacity: 0.33;
+}
+
+.toProjects:hover{
+    opacity: 1;
+}
