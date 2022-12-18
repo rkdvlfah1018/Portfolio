@@ -9,10 +9,6 @@
     margin-bottom: 0;
 }
 
-.icon{
-    margin-left: 5px;
-}
-
 .wallNode{
     background-color: black;
 }
@@ -34,4 +30,12 @@
     font-size: 25px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.startNode{
+    text-align: center;
+}
+
+.endNode{
+    text-align: center;
 }
